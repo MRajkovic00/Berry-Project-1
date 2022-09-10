@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Main page</title>
+</head>
+<body id="indexBody"> <!--FIRST PAGE-->
+ 
+
+
+    <div id="myDiv">
+
+    <!--SIDEBAR-->  
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html" id="mainPage">Page 1</a>
+        <ol id="page1List">
+          <li><a href="#h1">Registration</a></li>
+          <li><a href="#gameListButton">List of games</a></li>
+          <li><a href="#guessButton">Number randomizer</a></li>
+          <li><a href="#cardButton">Card shuffler</a></li>
+          <li><a href="#aniDiv"> Mobile box</a></li>
+        </ol>
+        <a href="other.html" id="otherPage">Page2</a>
+      </div>
+    
+      <span id="sidebarOpen" onclick="openNav()">Navigate through the website</span>
+    
+     
+
+
+
+        <h1 id="h1"><b>Welcome</b></h1>
+        <form id="loginForm" action="other.html" method="GET">
+        
+        <!--LOGIN SYSTEM-->
+        <!--USER DATA-->
+         <label id="lab1">Register to the site:</label><br><br>
+
+        <div id="inputData" class="inputData">
+            <label for="firstName"> First name: </label>
+         
+         <input type="text" id="firstName"  placeholder="First name" name="firstName" >
+         <i class="fa-solid fa-circle-check"></i>
+         <i class="fa-solid fa-circle-exclamation"></i>
+         <p>Error message</p>
+        </div>
+
+
+         <div class="inputData">
+            <label for="lastName">Last name: </label> 
+         
+            <input type="text" id="lastName"  placeholder="Last name" name="lastName" >
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>Error message</p>
+        </div>
+
+         <div class="inputData">
+            <label for="userName">User name:</label> 
+         
+         <input type="text" id="userName"  placeholder="User name"  name="userName">
+         <i class="fa-solid fa-circle-check"></i>
+         <i class="fa-solid fa-circle-exclamation"></i>
+         <p>Error message</p>
+         </div>
+
+        <div class="inputData">
+            <label for="email">Email:</label>
+         
+         <input type="email" id="email" name="email" >
+         <i class="fa-solid fa-circle-check"></i>
+         <i class="fa-solid fa-circle-exclamation"></i>
+         <p>Error message</p>
+        </div>
+
+        <div class="inputData">
+            <label for="password">Password:</label> 
+         
+            <input type="password" id="password" name="password">
+           Show password <input type="checkbox" onclick="visPassword()">
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>Error message</p>
+        </div>
+        <div class="inputData">
+            <label for="Cpassword">Confirm password:</label> 
+         
+            <input type="password" id="Cpassword" name="Cpassword">
+       
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>Error message</p>
+        </div>
+
+        <div class="inputData">
+            <label for="date">Date of birth:</label> 
+         
+            <input type="date" id="date" name="date" placeholder="01/01/2022">
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>Error message</p>
+        </div>
+
+         Select your prefered method of payment: <br><br>
+         <input type="radio" name="radioButtons">Visa<br>
+         <input type="radio" name="radioButtons">MasterCard<br>
+         <input type="radio" name="radioButtons">Paypal<br><br>
+
+         Do you agree with terms of service?<br><br>
+
+         <input type="checkbox" name="check" id="terms">Yes<br><br>
+        <!--RESET DATA-->
+      
+         <div> <input type="reset" id="resetButton"></div><br><br>
+         <div> 
+            <!--CONFIRM DATA-->
+            Register to our site:<br>  <input type="submit" id="subButton" value="register"><br><br> 
+    </div>
+</form><br><br>
+               <!--HIDDEN LIST-->
+               <div id="gamelistDiv">List of single-player games I've played: <br><br><button type="button" id="gameListButton">Game list</button><br><br>
+            
+                <ul id="gameList" style="display:none">
+                    <li class="lol">Serious Sam</li>
+                    <li class="lol">DOOM</li>
+                    <li class="lol">CupHead</li>
+                    <li class="lol">Vivisector: the beast within</li>
+                    <li class="lol">Resident Evil</li>
+                    <li class="lol">TMNT</li>
+                    <li class="lol">SOMA</li>
+                    <li class="lol">Outlast</li>
+                    <li class="lol">The Evil Within</li>
+                    <li class="lol">Spiderman: Friend or Foe</li>
+                    <li class="lol">Amogus</li>
+                    <li class="lol">Plague inc. Evolved</li>
+                </ul>          
+            </div><br><br><br>
+        
+        <!--NUMBER RANDOMIZER-->
+
+        <span> <button type="button" id="guessButton">Number randomizer</button><br><br>
+            <label id="guessLabel"></label><br></span><br>
+       
+                <!--CARD SHUFLLER-->
+
+        <div id="cardDiv"><button type="button" id="cardButton">Shuffle the cards</button><br><br>
+            <label id="cardLabel"></label><br><br><br></div>
+        <!--MOBILE BOX-->
+        <div id="aniDiv"></div><br><br>
+        
+     
+        
+            
+    </div>
+    
+        
+      
+
+
+    <i class="fa-solid fa-circle-check"></i>
+    <i class="fa-solid fa-circle-exclamation"></i>
+    <script src="index.js"></script>
+
+</body>
+</html>
