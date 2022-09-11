@@ -2,13 +2,16 @@ body {
     background-image: url("image0.jpg");
     background-repeat:repeat;
 
-    
+    /*width:105%;
+      max-width:1920px;
+      min-width:480px;*/
 }
 html {
   scroll-behavior: smooth;
   }
 /*SIDEBAR*/
 .sidenav {
+ 
   height: 100%;
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
@@ -19,6 +22,7 @@ html {
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
 }
 
 /* The navigation menu links */
@@ -74,6 +78,8 @@ html {
     padding:50px;
     text-align: center;
     border:3px solid black;
+    max-width:1920px;
+    min-width:480px;
 }
 #h1 {
     font-size: 100px;
@@ -92,6 +98,8 @@ html {
   text-transform: uppercase;
   background-color: darkgreen;
   margin-left:400px;
+  max-width:1920px;
+  min-width:480px;
 }
 .inputData{
   position:relative;
@@ -153,6 +161,7 @@ color:blue;
   height:400px;
   margin-left: 600px;
   border:3px solid black;
+
 }
 
 #gameListButton {
@@ -194,6 +203,7 @@ color:blue;
     border:3px;
     position: relative;
     margin-left: 700px;
+    
 }
 #subButton {
     size: 50px;
@@ -220,6 +230,8 @@ color:blue;
     margin:auto;
     padding:50px;
     text-align: center;
+    max-width:1920px;
+    min-width:480px;
 }
 /*ANIMATION*/
 #animationDiv{
@@ -241,6 +253,7 @@ color:blue;
 /* Slideshow container */
 .slideshow-container {
   max-width: 500px;
+  min-width:480px;
   position: relative;
   margin: auto;
 }
